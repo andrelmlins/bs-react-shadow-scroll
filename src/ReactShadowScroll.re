@@ -39,5 +39,5 @@ let make =
         ~styleSubcontainer?,
         (),
       ),
-      children,
+    children,
   );
