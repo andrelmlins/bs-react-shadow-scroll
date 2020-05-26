@@ -1,5 +1,6 @@
 {
   "name": "bs-react-shadow-scroll",
+  "description": "ReasonReact bindings for the react-shadow-scroll",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",

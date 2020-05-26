@@ -1,5 +1,19 @@
-[@bs.module "react-shadow-scroll/dist/index.js"]
-external reactClass: ReasonReact.reactClass = "default";
+[@bs.module "react-shadow-scroll"]
+external shadowScroll: ReasonReact.reactClass = "default";
+
+[@bs.obj]
+external makeProps:
+  (
+    ~scrollColor: string=?,
+    ~scrollColorHover: string=?,
+    ~scrollWidth: int=?,
+    ~scrollPadding: int=?,
+    ~isShadow: bool=?,
+    ~shadow: string=?,
+    ~styleSubcontainer: ReactDOMRe.Style.t=?,
+    unit
+  ) =>
+  _;
 
 let make =
     (
@@ -13,15 +27,17 @@ let make =
       children,
     ) =>
   ReasonReact.wrapJsForReason(
-    ~reactClass,
-    ~props={
-      "scrollColor": Js.Nullable.fromOption(scrollColor),
-      "scrollColorHover": Js.Nullable.fromOption(scrollColorHover),
-      "scrollWidth": Js.Nullable.fromOption(scrollWidth),
-      "scrollPadding": Js.Nullable.fromOption(scrollPadding),
-      "isShadow": Js.Nullable.fromOption(isShadow),
-      "shadow": Js.Nullable.fromOption(shadow),
-      "styleSubcontainer": Js.Nullable.fromOption(styleSubcontainer),
-    },
-    children,
+    ~reactClass=shadowScroll,
+    ~props=
+      makeProps(
+        ~scrollColor?,
+        ~scrollColorHover?,
+        ~scrollWidth?,
+        ~scrollPadding?,
+        ~isShadow?,
+        ~shadow?,
+        ~styleSubcontainer?,
+        (),
+      ),
+      children,
   );
