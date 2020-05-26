@@ -1,0 +1,15 @@
+{
+  "name": "bs-react-shadow-scroll",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react-shadow-scroll": "^1.0.1"
+  },
+  "devDependencies": {
+    "bs-platform": "^7.3.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reason-react": "^0.8.0"
+  }
+}
