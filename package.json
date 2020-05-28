@@ -1,7 +1,7 @@
 {
   "name": "bs-react-shadow-scroll",
   "description": "ReasonML bindings for the react-shadow-scroll",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "src/ReactShadowScroll.re",
   "license": "MIT",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
