@@ -23,7 +23,7 @@
     "test": "exit 0"
   },
   "dependencies": {
-    "react-shadow-scroll": "^1.0.1"
+    "react-shadow-scroll": "^2.0.0"
   },
   "devDependencies": {
     "bs-platform": "^7.3.2",
